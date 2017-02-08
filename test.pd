@@ -1,0 +1,69 @@
+#N canvas 580 66 1265 944 10;
+#X obj 57 570 dac~;
+#X obj 209 73 hsl 100 15 0 1 0 0 empty empty Parameter_B -2 -8 0 10
+-262144 -1 -1 0 1;
+#X obj 323 97 hsl 100 15 0 1 0 0 empty empty Parameter_C -2 -8 0 10
+-262144 -1 -1 0 1;
+#X obj 438 125 hsl 100 15 0 1 0 0 empty empty Parameter_D -2 -8 0 10
+-262144 -1 -1 0 1;
+#X obj 444 146 r Channel-D;
+#X obj 330 118 r Channel-C;
+#X obj 219 94 r Channel-B;
+#X obj 95 49 hsl 100 15 0 1 0 0 empty empty Parameter_A -2 -8 0 10
+-262144 -1 -1 0 1;
+#X obj 102 70 r Channel-A;
+#X obj 20 49 adc~;
+#X obj 205 141 + 0;
+#X obj 91 116 + 0;
+#X obj 92 95 * 1;
+#X obj 206 120 * 1;
+#X obj 320 143 * 1;
+#X obj 319 164 + 0;
+#X obj 435 171 * 1;
+#X obj 433 192 + 0;
+#X obj 94 201 hsl 100 15 0 1 0 0 empty empty Parameter_E_(Exp) -2 -8
+0 10 -262144 -1 -1 0 1;
+#X obj 91 247 * 1;
+#X obj 89 268 + 0;
+#X obj 227 289 * 1;
+#X obj 225 310 + 0;
+#X obj 236 264 r Channel-Push;
+#X obj 233 241 tgl 15 0 empty empty Channel-Push 17 7 0 10 -262144
+-1 -1 0 1;
+#X obj 226 221 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+-1 -1;
+#X text 27 9 Improved OWL Puredata Template;
+#X obj 359 286 s Channel-Push;
+#X obj 369 261 tgl 15 0 empty empty Channel-Push 17 7 0 10 -262144
+-1 -1 0 1;
+#X obj 362 241 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+-1 -1;
+#X obj 101 223 r Channel-E;
+#X obj 42 284 *~;
+#X connect 1 0 13 0;
+#X connect 2 0 14 0;
+#X connect 3 0 16 0;
+#X connect 4 0 16 0;
+#X connect 5 0 14 0;
+#X connect 6 0 13 0;
+#X connect 7 0 12 0;
+#X connect 8 0 12 0;
+#X connect 9 0 31 0;
+#X connect 9 1 31 0;
+#X connect 11 0 31 1;
+#X connect 12 0 11 0;
+#X connect 13 0 10 0;
+#X connect 14 0 15 0;
+#X connect 16 0 17 0;
+#X connect 18 0 19 0;
+#X connect 19 0 20 0;
+#X connect 21 0 22 0;
+#X connect 23 0 21 0;
+#X connect 24 0 21 0;
+#X connect 25 0 21 0;
+#X connect 28 0 27 0;
+#X connect 29 0 27 0;
+#X connect 30 0 19 0;
+#X connect 31 0 0 0;
+#X connect 31 0 0 1;
+#X coords 0 0 1 1 85 60 0;
